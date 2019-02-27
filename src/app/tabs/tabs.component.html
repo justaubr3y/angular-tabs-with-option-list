@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <ul class="nav nav-tabs">
+    <li role="presentation" [ngClass]="{active: chosenList === 'all'}">
+      <a (click)="onChoose('all')">All</a>
+    </li>
+    <li role="presentation" [ngClass]="{active: chosenList === 'targaryen'}">
+      <a (click)="onChoose('targaryen')">Targaryen</a>
+    </li>
+    <li role="presentation" [ngClass]="{active: chosenList === 'stark'}">
+      <a (click)="onChoose('stark')">Stark</a>
+    </li>
+    <li role="presentation" [ngClass]="{active: chosenList === 'lanister'}">
+      <a (click)="onChoose('lanister')">Lanister</a>
+    </li>
+    <li role="presentation" [ngClass]="{active: chosenList === 'tyrell'}">
+      <a (click)="onChoose('tyrell')">Tyrell</a>
+    </li>
+  </ul>
+  <app-list [characters]="getCharacters()"></app-list>
+<div>

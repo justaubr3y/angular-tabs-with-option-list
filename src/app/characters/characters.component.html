@@ -1,0 +1,23 @@
+<a class="list-group-item">
+  <h6 class="list-group-item-heading" style="font-size: 16px; font-weight: 400; color: #404040;">
+    {{ character.name }}
+  </h6>
+  <div class="btn-group" role="group" aria-label="...">
+    <button
+      type="button"
+      class="btn-group btn btn-info"
+      (click)="onAssign('targaryen')">Targaryen</button>
+    <button
+      type="button"
+      class="btn-group btn btn-info"
+      (click)="onAssign('stark')">Stark</button>
+    <button
+      type="button"
+      class="btn-group btn btn-info"
+      (click)="onAssign('lanister')">Lanister</button>
+     <button
+      type="button"
+      class="btn-group btn btn-info"
+      (click)="onAssign('tyrell')">Tyrell</button>
+  </div>
+</a>

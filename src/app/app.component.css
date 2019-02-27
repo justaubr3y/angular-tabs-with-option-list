@@ -1,0 +1,9 @@
+body {
+  font-size: 14px;
+}
+a:hover {
+  text-decoration: none !important;
+}
+.title {
+  margin: 2em 0;
+}
